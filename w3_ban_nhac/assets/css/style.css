@@ -1,0 +1,127 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 46px;
+    background-color: black;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0px 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    font-size: 20px;
+    color: white;
+    line-height: 46px;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li { 
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a { 
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+} 
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0px 12px;
+    background-color: white;
+    line-height: 36px;
+}
+
+#nav .nav-icon-dow {
+    font-size: 16px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("/assets/image/slider.jpeg") top center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+
+}
+
+#slider .text-description {
+    padding: 10px;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
