@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 
@@ -14,10 +15,10 @@
         <div id="header">
             <!-- Begin: nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">
                         More
@@ -35,6 +36,10 @@
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="ti-menu"></i>
+            </div>
             <!-- End: Search -->
         </div>
 
@@ -49,7 +54,7 @@
 
         <div id="content">
             <!-- About -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">The Band</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -60,25 +65,24 @@
                     est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
-                <div class="menber-list">
-                    <div class="menber-item">
+                <div class="row menber-list">
+                    <div class="col col-3 s-col-full mt-16 s-col-full text-align-center">
                         <p class="menber-name">Name</p>
                         <img src="./assets/image/bandmember.jpg" alt="Name" class="menber-image">
                     </div>
-                    <div class="menber-item">
+                    <div class="col col-3 s-col-full mt-16 s-col-full text-align-center">
                         <p class="menber-name">Name</p>
                         <img src="./assets/image/bandmember.jpg" alt="Name" class="menber-image">
                     </div>
-                    <div class="menber-item">
+                    <div class="col col-3 s-col-full mt-16 s-col-full text-align-center">
                         <p class="menber-name">Name</p>
                         <img src="./assets/image/bandmember.jpg" alt="Name" class="menber-image">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
 
             <!-- TOUR -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">Remember to book your tickets!</p>
@@ -89,8 +93,8 @@
                     </ul>
 
                     <!-- Place -->
-                    <div class="place-list">
-                        <div class="place-item">
+                    <div class="row place-list">
+                        <div class="col col-3 s-col-full mt-16">
                             <img src="./assets/image/place/place1.jpeg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -99,41 +103,112 @@
                                 <a href="#" class="place-buy-btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
-                            <img src="./assets/image/place/place1.jpeg" alt="New York" class="place-img">
+                        <div class="col col-3 s-col-full mt-16">
+                            <img src="./assets/image/place/place2.jpeg" alt="New York" class="place-img">
                             <div class="place-body">
-                                <h3 class="place-heading">New York</h3>
+                                <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                                 <a href="#" class="place-buy-btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
-                            <img src="./assets/image/place/place1.jpeg" alt="New York" class="place-img">
+                        <div class="col col-3 s-col-full mt-16">
+                            <img src="./assets/image/place/place3.jpeg" alt="New York" class="place-img">
                             <div class="place-body">
-                                <h3 class="place-heading">New York</h3>
+                                <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                                 <a href="#" class="place-buy-btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- CONTACT -->
-            <div class="content-section">
+            <!--Begin: CONTACT -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-2 s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-2 s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-2 s-col-full">
+                                    <input type="text" placeholder="Name" required class="form-control">
+                                </div>
+                                <div class="col col-2 s-col-full">
+                                    <input type="email" placeholder="Email" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-1 s-col-full">
+                                    <input type="text" placeholder="Message" required class="form-control">
+                                </div>
+                            </div>
+                            <input class="form-submit-btn btn s-full-width" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--End: CONTACT -->
 
+            <div class="map">
+                <img src="./assets/image/map.jpg" alt="Map">
             </div>
         </div>
 
         <div id="footer">
-
+            <div class="socials-list">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-youtube"></i></a>
+                <a href="#"><i class="ti-pinterest"></i></a>
+                <a href="#"><i class="ti-twitter"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        // dong mo mobile menu
+        mobileMenu.onclick = function () {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // tu dong dong khi chon menu
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+
+        for (let i = 0; i < menuItems.length; i++) {
+            const element = menuItems[i];
+            var seft = this;
+
+            element.onclick = function () {
+                var isParentMenu = element.nextElementSibling && element.nextElementSibling.classList.contains('subnav');
+
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            };
+        };
+    </script>
 </body>
 
 </html>
